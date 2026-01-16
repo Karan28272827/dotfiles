@@ -1,0 +1,100 @@
+TMUX KEY BINDINGS (Custom Config)
+================================
+
+PREFIX KEY
+----------
+Prefix key: Ctrl + a
+(Default Ctrl + b is disabled)
+
+Press prefix twice (Ctrl + a, Ctrl + a) to send literal Ctrl+a
+
+
+PANE MANAGEMENT
+---------------
+Split pane vertically (left/right):
+Ctrl + a then |
+
+Split pane horizontally (top/bottom):
+Ctrl + a then -
+
+
+PANE RESIZING (repeatable)
+-------------------------
+Resize pane down:
+Ctrl + a then j
+
+Resize pane up:
+Ctrl + a then k
+
+Resize pane right:
+Ctrl + a then l
+
+Resize pane left:
+Ctrl + a then h
+
+Each key press resizes by 5 units.
+
+
+PANE ZOOM
+---------
+Toggle zoom (maximize / restore pane):
+Ctrl + a then m
+
+
+CONFIG RELOAD / CUSTOM COMMAND
+------------------------------
+Ctrl + a then r
+
+NOTE:
+- This key is bound twice in config
+- Currently runs a Java compile + run command in a split pane
+- Reload config binding is overridden
+
+
+COPY MODE (VIM STYLE)
+---------------------
+Enter copy mode:
+Ctrl + a then [
+
+Start selection:
+v
+
+Copy selection:
+y
+
+Mouse drag does NOT exit copy mode
+
+
+MOUSE SUPPORT
+-------------
+Mouse mode is ON:
+- Click to select panes
+- Scroll with mouse wheel
+
+
+PLUGINS ENABLED
+---------------
+- tmux-plugins/tpm (Plugin Manager)
+- vim-tmux-navigator
+- tmux-resurrect (session restore)
+- tmux-continuum (auto save)
+- tmux-tokyo-night (theme)
+
+
+SESSION PERSISTENCE (via plugins)
+---------------------------------
+Save session:
+Ctrl + a then Ctrl + s
+
+Restore session (after restart):
+Ctrl + a then Ctrl + s
+
+
+TERMINAL MODE
+-------------
+Default terminal:
+screen-256color
+
+Copy mode keys:
+vi-style enabled
+
